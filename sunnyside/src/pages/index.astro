@@ -4,6 +4,8 @@ import Nav from "../components/nav.astro";
 import Photographies from "../components/photographies.astro";
 import FirstLayout from "../layouts/firstLayout.astro";
 import Footer from "../components/footer.astro";
+import FirstSection from "../components/firstSection.astro";
+import SecondSection from "../components/secondSection.astro";
 ---
 <FirstLayout>
 	<Nav></Nav>
@@ -16,55 +18,15 @@ import Footer from "../components/footer.astro";
 			<img src="image-header.jpg" alt="">
 		</div>
 	</section>
-	<section id="main-content">
-		<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-12 items-center">
-			<div class="px-10 order-last sm:order-first mb-5">
-				<h1 class="text-[#233040] font-bold text-3xl mb-6">Transform your brand</h1>
-				<p class="text-[#848389] mb-6">We are full-service creative agency specializing in helping brands grow fast. Engage your clientes through compelling visuals that do most of the marketing for you.</p>
-				<a href="" class="font-bold hover:underline hover:decoration-[#FFD600] hover:decoration-4">Learn More</a>
-			</div>
-			<div>
-				<img src="egg.jpg" alt="">
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-12 items-center">
-			<div class="px-10 order-last mb-5">
-				<h1 class="text-[#233040] font-bold text-3xl mb-6">Stand out to the right audience</h1>
-				<p class="text-[#848389] mb-6">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
-				<a href="" class="font-bold hover:underline hover:decoration-[#FF7568] hover:decoration-4">Learn More</a>
-			</div>
-			<div>
-				<img src="cup.jpg" alt="">
-			</div>
-		</div>
-	</section>
-	<section class="grid grid-cols-1 sm:grid-cols-2">
-		<div class="relative flex flex-row">
-			<img src="image-graphic-design.jpg" alt="">
-			<div class="absolute text-center items-center bottom-0">
-				<h1 class="text-[#1F5148] font-bold text-md sm:2xl mb-3">Graphic Design</h1>
-				<p class="text-[#1F5148] px-10 text-sm sm:text-md mb-3">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients attention.</p>
-			</div>
-		</div>
-		<div class="relative flex flex-row">
-			<img src="image-photography.jpg" alt="">
-			<div class="absolute text-center items-center bottom-0">
-				<h1 class="text-[#195570] font-bold text-md sm:2xl mb-3">Photography</h1>
-				<p class="text-[#195570] px-10 text-sm sm:text-md mb-3">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-			</div>
-		</div>
-	</section>
+	<FirstSection></FirstSection>
+	<SecondSection></SecondSection>
 	<section class="mt-12 px-4 mb-8">
 		<h1 class="font-bold text-2xl text-center text-[#AAAAAA]">Client Testimonials</h1>
 		<div class="container mx-auto grid grid-cols-1 sm:grid-cols-3 mt-8 gap-y-4 gap-x-4">
 			<Articule></Articule>
 		</div>
 	</section>
-	<section>
 		<Photographies></Photographies>
-	</section>
 	<Footer></Footer>
 </FirstLayout>
 	
